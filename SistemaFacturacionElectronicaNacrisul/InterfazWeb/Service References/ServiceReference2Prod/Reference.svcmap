@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c843ab2f-fde9-43af-8dfd-6fe9050010ed" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://prod6531.ucfe.com.uy/Query/WebServicesFE.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WebServicesFE.disco" MetadataType="Disco" ID="6cb9b604-980b-4e90-907d-f3c4bbd9a8fa" SourceId="1" SourceUrl="https://prod6531.ucfe.com.uy/Query/WebServicesFE.svc?disco" />
+    <MetadataFile FileName="ConsultaCfe.wsdl" MetadataType="Wsdl" ID="eea63a42-ea5d-4769-9a5b-5e5854958162" SourceId="1" SourceUrl="https://prod6531.ucfe.com.uy/Query/WebServicesFE.svc?wsdl" />
+    <MetadataFile FileName="WebServicesFE.xsd" MetadataType="Schema" ID="1c7834ca-ace9-4752-a400-ffee1e822bda" SourceId="1" SourceUrl="https://prod6531.ucfe.com.uy/Query/WebServicesFE.svc?xsd=xsd4" />
+    <MetadataFile FileName="WebServicesFE1.xsd" MetadataType="Schema" ID="a44918ef-3c97-4a49-89c4-f35112d51823" SourceId="1" SourceUrl="https://prod6531.ucfe.com.uy/Query/WebServicesFE.svc?xsd=xsd3" />
+    <MetadataFile FileName="WebServicesFE2.xsd" MetadataType="Schema" ID="c0c321f2-7048-438c-b6b6-1c7ce5065199" SourceId="1" SourceUrl="https://prod6531.ucfe.com.uy/Query/WebServicesFE.svc?xsd=xsd2" />
+    <MetadataFile FileName="WebServicesFE3.xsd" MetadataType="Schema" ID="78c478c9-f104-478a-a1f9-20cc8cbdec5f" SourceId="1" SourceUrl="https://prod6531.ucfe.com.uy/Query/WebServicesFE.svc?xsd=xsd1" />
+    <MetadataFile FileName="WebServicesFE4.xsd" MetadataType="Schema" ID="5ed26a1d-f8c1-488a-80cb-9bed32691079" SourceId="1" SourceUrl="https://prod6531.ucfe.com.uy/Query/WebServicesFE.svc?xsd=xsd0" />
+    <MetadataFile FileName="WebServicesFE.wsdl" MetadataType="Wsdl" ID="76abd802-d458-46f4-ab52-5207ae914535" SourceId="1" SourceUrl="https://prod6531.ucfe.com.uy/Query/WebServicesFE.svc?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,16 @@
+C:\Users\Usuario\Documents\EEIntegra\Nacrisul\SistemaFacturacionElectronicaNacrisul\InterfazWeb\bin\InterfazWeb.dll
+C:\Users\Usuario\Documents\EEIntegra\Nacrisul\SistemaFacturacionElectronicaNacrisul\InterfazWeb\bin\InterfazWeb.pdb
+C:\Users\Usuario\Documents\EEIntegra\Nacrisul\SistemaFacturacionElectronicaNacrisul\InterfazWeb\bin\AjaxControlToolkit.dll
+C:\Users\Usuario\Documents\EEIntegra\Nacrisul\SistemaFacturacionElectronicaNacrisul\InterfazWeb\bin\ASP.Web.UI.PopupControl.dll
+C:\Users\Usuario\Documents\EEIntegra\Nacrisul\SistemaFacturacionElectronicaNacrisul\InterfazWeb\bin\ClosedXML.dll
+C:\Users\Usuario\Documents\EEIntegra\Nacrisul\SistemaFacturacionElectronicaNacrisul\InterfazWeb\bin\Dominio.dll
+C:\Users\Usuario\Documents\EEIntegra\Nacrisul\SistemaFacturacionElectronicaNacrisul\InterfazWeb\bin\itextsharp.dll
+C:\Users\Usuario\Documents\EEIntegra\Nacrisul\SistemaFacturacionElectronicaNacrisul\InterfazWeb\bin\EntityFramework.dll
+C:\Users\Usuario\Documents\EEIntegra\Nacrisul\SistemaFacturacionElectronicaNacrisul\InterfazWeb\bin\Dominio.pdb
+C:\Users\Usuario\Documents\EEIntegra\Nacrisul\SistemaFacturacionElectronicaNacrisul\InterfazWeb\bin\ClosedXML.xml
+C:\Users\Usuario\Documents\EEIntegra\Nacrisul\SistemaFacturacionElectronicaNacrisul\InterfazWeb\bin\EntityFramework.xml
+C:\Users\Usuario\Documents\EEIntegra\Nacrisul\SistemaFacturacionElectronicaNacrisul\InterfazWeb\obj\Debug\InterfazWeb.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Documents\EEIntegra\Nacrisul\SistemaFacturacionElectronicaNacrisul\InterfazWeb\obj\Debug\Interop.PhotoUploaderLib.dll
+C:\Users\Usuario\Documents\EEIntegra\Nacrisul\SistemaFacturacionElectronicaNacrisul\InterfazWeb\obj\Debug\InterfazWeb.csproj.ResolveComReference.cache
+C:\Users\Usuario\Documents\EEIntegra\Nacrisul\SistemaFacturacionElectronicaNacrisul\InterfazWeb\obj\Debug\InterfazWeb.dll
+C:\Users\Usuario\Documents\EEIntegra\Nacrisul\SistemaFacturacionElectronicaNacrisul\InterfazWeb\obj\Debug\InterfazWeb.pdb

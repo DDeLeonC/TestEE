@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/TrxServer.Cfe.Common" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/TrxServer.Cfe.Common" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="EstadoCfeRecibido">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="DebeSerEnviadoAlErp" />
+      <xs:enumeration value="EnviadoAlErpSeEsperaRespuesta" />
+      <xs:enumeration value="Aceptado" />
+      <xs:enumeration value="Rechazado" />
+      <xs:enumeration value="Anulado" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="EstadoCfeRecibido" nillable="true" type="tns:EstadoCfeRecibido" />
+</xs:schema>

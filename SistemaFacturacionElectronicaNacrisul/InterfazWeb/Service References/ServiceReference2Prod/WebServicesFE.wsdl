@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://ucfe.uruware.com/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ucfe.uruware.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://ucfe.uruware.com/Imports">
+      <xsd:import schemaLocation="https://prod6531.ucfe.com.uy/Query/WebServicesFE.svc?xsd=xsd0" namespace="http://ucfe.uruware.com/" />
+      <xsd:import schemaLocation="https://prod6531.ucfe.com.uy/Query/WebServicesFE.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://prod6531.ucfe.com.uy/Query/WebServicesFE.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/TrxServer.Cfe.WebServices" />
+      <xsd:import schemaLocation="https://prod6531.ucfe.com.uy/Query/WebServicesFE.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="https://prod6531.ucfe.com.uy/Query/WebServicesFE.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/TrxServer.Cfe.Common" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IConsultaCfe_ComprobantesPorEmpresaDenegadosPorDgi_InputMessage">
+    <wsdl:part name="parameters" element="tns:ComprobantesPorEmpresaDenegadosPorDgi" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_ComprobantesPorEmpresaDenegadosPorDgi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ComprobantesPorEmpresaDenegadosPorDgiResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_ComprobantesPorEmpresaPorSerEnviadosADgi_InputMessage">
+    <wsdl:part name="parameters" element="tns:ComprobantesPorEmpresaPorSerEnviadosADgi" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_ComprobantesPorEmpresaPorSerEnviadosADgi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ComprobantesPorEmpresaPorSerEnviadosADgiResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_ComprobantesPorSucursalDenegadosPorDgi_InputMessage">
+    <wsdl:part name="parameters" element="tns:ComprobantesPorSucursalDenegadosPorDgi" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_ComprobantesPorSucursalDenegadosPorDgi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ComprobantesPorSucursalDenegadosPorDgiResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_ComprobantesPorSucursalPorSerEnviadosADgi_InputMessage">
+    <wsdl:part name="parameters" element="tns:ComprobantesPorSucursalPorSerEnviadosADgi" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_ComprobantesPorSucursalPorSerEnviadosADgi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ComprobantesPorSucursalPorSerEnviadosADgiResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_ComprobantesPorCajaDenegadosPorDgi_InputMessage">
+    <wsdl:part name="parameters" element="tns:ComprobantesPorCajaDenegadosPorDgi" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_ComprobantesPorCajaDenegadosPorDgi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ComprobantesPorCajaDenegadosPorDgiResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_ComprobantesPorCajaPorSerEnviadosADgi_InputMessage">
+    <wsdl:part name="parameters" element="tns:ComprobantesPorCajaPorSerEnviadosADgi" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_ComprobantesPorCajaPorSerEnviadosADgi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ComprobantesPorCajaPorSerEnviadosADgiResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_ConsultaHtmlPorNumero_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultaHtmlPorNumero" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_ConsultaHtmlPorNumero_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultaHtmlPorNumeroResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_ConsultaHtmlConMontoYCodigo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultaHtmlConMontoYCodigo" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_ConsultaHtmlConMontoYCodigo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultaHtmlConMontoYCodigoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_ConsultaAvanzadaConMontoYCodigo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultaAvanzadaConMontoYCodigo" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_ConsultaAvanzadaConMontoYCodigo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultaAvanzadaConMontoYCodigoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_ObtenerResultadoConciliacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerResultadoConciliacion" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_ObtenerResultadoConciliacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerResultadoConciliacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_RealizarConciliacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:RealizarConciliacion" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_RealizarConciliacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RealizarConciliacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_ObtenerPdf_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPdf" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_ObtenerPdf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPdfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_GenerarImagen_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarImagen" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_GenerarImagen_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarImagenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_ObtenerPdfConParametros_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPdfConParametros" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_ObtenerPdfConParametros_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPdfConParametrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_GenerarImagenConParametros_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarImagenConParametros" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_GenerarImagenConParametros_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarImagenConParametrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_ObtenerPdfCfeRecibido_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPdfCfeRecibido" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_ObtenerPdfCfeRecibido_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPdfCfeRecibidoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_ObtenerEstadoCfeRecibido_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerEstadoCfeRecibido" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_ObtenerEstadoCfeRecibido_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerEstadoCfeRecibidoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_GenerarImagenCfeRecibido_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarImagenCfeRecibido" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_GenerarImagenCfeRecibido_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarImagenCfeRecibidoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_GenerarRollo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarRollo" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_GenerarRollo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarRolloResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_GenerarRolloConParametros_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarRolloConParametros" />
+  </wsdl:message>
+  <wsdl:message name="IConsultaCfe_GenerarRolloConParametros_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarRolloConParametrosResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IConsultaCfe">
+    <wsdl:operation name="ComprobantesPorEmpresaDenegadosPorDgi">
+      <wsdl:input wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/ComprobantesPorEmpresaDenegadosPorDgi" message="tns:IConsultaCfe_ComprobantesPorEmpresaDenegadosPorDgi_InputMessage" />
+      <wsdl:output wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/ComprobantesPorEmpresaDenegadosPorDgiResponse" message="tns:IConsultaCfe_ComprobantesPorEmpresaDenegadosPorDgi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ComprobantesPorEmpresaPorSerEnviadosADgi">
+      <wsdl:input wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/ComprobantesPorEmpresaPorSerEnviadosADgi" message="tns:IConsultaCfe_ComprobantesPorEmpresaPorSerEnviadosADgi_InputMessage" />
+      <wsdl:output wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/ComprobantesPorEmpresaPorSerEnviadosADgiResponse" message="tns:IConsultaCfe_ComprobantesPorEmpresaPorSerEnviadosADgi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ComprobantesPorSucursalDenegadosPorDgi">
+      <wsdl:input wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/ComprobantesPorSucursalDenegadosPorDgi" message="tns:IConsultaCfe_ComprobantesPorSucursalDenegadosPorDgi_InputMessage" />
+      <wsdl:output wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/ComprobantesPorSucursalDenegadosPorDgiResponse" message="tns:IConsultaCfe_ComprobantesPorSucursalDenegadosPorDgi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ComprobantesPorSucursalPorSerEnviadosADgi">
+      <wsdl:input wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/ComprobantesPorSucursalPorSerEnviadosADgi" message="tns:IConsultaCfe_ComprobantesPorSucursalPorSerEnviadosADgi_InputMessage" />
+      <wsdl:output wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/ComprobantesPorSucursalPorSerEnviadosADgiResponse" message="tns:IConsultaCfe_ComprobantesPorSucursalPorSerEnviadosADgi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ComprobantesPorCajaDenegadosPorDgi">
+      <wsdl:input wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/ComprobantesPorCajaDenegadosPorDgi" message="tns:IConsultaCfe_ComprobantesPorCajaDenegadosPorDgi_InputMessage" />
+      <wsdl:output wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/ComprobantesPorCajaDenegadosPorDgiResponse" message="tns:IConsultaCfe_ComprobantesPorCajaDenegadosPorDgi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ComprobantesPorCajaPorSerEnviadosADgi">
+      <wsdl:input wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/ComprobantesPorCajaPorSerEnviadosADgi" message="tns:IConsultaCfe_ComprobantesPorCajaPorSerEnviadosADgi_InputMessage" />
+      <wsdl:output wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/ComprobantesPorCajaPorSerEnviadosADgiResponse" message="tns:IConsultaCfe_ComprobantesPorCajaPorSerEnviadosADgi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaHtmlPorNumero">
+      <wsdl:input wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/ConsultaHtmlPorNumero" message="tns:IConsultaCfe_ConsultaHtmlPorNumero_InputMessage" />
+      <wsdl:output wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/ConsultaHtmlPorNumeroResponse" message="tns:IConsultaCfe_ConsultaHtmlPorNumero_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaHtmlConMontoYCodigo">
+      <wsdl:input wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/ConsultaHtmlConMontoYCodigo" message="tns:IConsultaCfe_ConsultaHtmlConMontoYCodigo_InputMessage" />
+      <wsdl:output wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/ConsultaHtmlConMontoYCodigoResponse" message="tns:IConsultaCfe_ConsultaHtmlConMontoYCodigo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaAvanzadaConMontoYCodigo">
+      <wsdl:input wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/ConsultaAvanzadaConMontoYCodigo" message="tns:IConsultaCfe_ConsultaAvanzadaConMontoYCodigo_InputMessage" />
+      <wsdl:output wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/ConsultaAvanzadaConMontoYCodigoResponse" message="tns:IConsultaCfe_ConsultaAvanzadaConMontoYCodigo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerResultadoConciliacion">
+      <wsdl:input wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/ObtenerResultadoConciliacion" message="tns:IConsultaCfe_ObtenerResultadoConciliacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/ObtenerResultadoConciliacionResponse" message="tns:IConsultaCfe_ObtenerResultadoConciliacion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RealizarConciliacion">
+      <wsdl:input wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/RealizarConciliacion" message="tns:IConsultaCfe_RealizarConciliacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/RealizarConciliacionResponse" message="tns:IConsultaCfe_RealizarConciliacion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPdf">
+      <wsdl:input wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/ObtenerPdf" message="tns:IConsultaCfe_ObtenerPdf_InputMessage" />
+      <wsdl:output wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/ObtenerPdfResponse" message="tns:IConsultaCfe_ObtenerPdf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerarImagen">
+      <wsdl:input wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/GenerarImagen" message="tns:IConsultaCfe_GenerarImagen_InputMessage" />
+      <wsdl:output wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/GenerarImagenResponse" message="tns:IConsultaCfe_GenerarImagen_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPdfConParametros">
+      <wsdl:input wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/ObtenerPdfConParametros" message="tns:IConsultaCfe_ObtenerPdfConParametros_InputMessage" />
+      <wsdl:output wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/ObtenerPdfConParametrosResponse" message="tns:IConsultaCfe_ObtenerPdfConParametros_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerarImagenConParametros">
+      <wsdl:input wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/GenerarImagenConParametros" message="tns:IConsultaCfe_GenerarImagenConParametros_InputMessage" />
+      <wsdl:output wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/GenerarImagenConParametrosResponse" message="tns:IConsultaCfe_GenerarImagenConParametros_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPdfCfeRecibido">
+      <wsdl:input wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/ObtenerPdfCfeRecibido" message="tns:IConsultaCfe_ObtenerPdfCfeRecibido_InputMessage" />
+      <wsdl:output wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/ObtenerPdfCfeRecibidoResponse" message="tns:IConsultaCfe_ObtenerPdfCfeRecibido_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerEstadoCfeRecibido">
+      <wsdl:input wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/ObtenerEstadoCfeRecibido" message="tns:IConsultaCfe_ObtenerEstadoCfeRecibido_InputMessage" />
+      <wsdl:output wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/ObtenerEstadoCfeRecibidoResponse" message="tns:IConsultaCfe_ObtenerEstadoCfeRecibido_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerarImagenCfeRecibido">
+      <wsdl:input wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/GenerarImagenCfeRecibido" message="tns:IConsultaCfe_GenerarImagenCfeRecibido_InputMessage" />
+      <wsdl:output wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/GenerarImagenCfeRecibidoResponse" message="tns:IConsultaCfe_GenerarImagenCfeRecibido_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerarRollo">
+      <wsdl:input wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/GenerarRollo" message="tns:IConsultaCfe_GenerarRollo_InputMessage" />
+      <wsdl:output wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/GenerarRolloResponse" message="tns:IConsultaCfe_GenerarRollo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerarRolloConParametros">
+      <wsdl:input wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/GenerarRolloConParametros" message="tns:IConsultaCfe_GenerarRolloConParametros_InputMessage" />
+      <wsdl:output wsaw:Action="http://ucfe.uruware.com/IConsultaCfe/GenerarRolloConParametrosResponse" message="tns:IConsultaCfe_GenerarRolloConParametros_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/TrxServer.Cfe.WebServices" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/TrxServer.Cfe.WebServices" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfComprobante">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Comprobante" nillable="true" type="tns:Comprobante" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfComprobante" nillable="true" type="tns:ArrayOfComprobante" />
+  <xs:complexType name="Comprobante">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodigoComercio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodigoTerminal" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Numero" type="xs:int" />
+      <xs:element minOccurs="0" name="Serie" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoCfe" type="xs:int" />
+      <xs:element minOccurs="0" name="Uuid" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Comprobante" nillable="true" type="tns:Comprobante" />
+  <xs:complexType name="RespuestaConsultaCfe">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodigoComercio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodigoTerminal" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaFirma" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Numero" type="xs:int" />
+      <xs:element minOccurs="0" name="Rut" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Serie" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoCfe" type="xs:int" />
+      <xs:element minOccurs="0" name="XmlTransformado" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RespuestaConsultaCfe" nillable="true" type="tns:RespuestaConsultaCfe" />
+</xs:schema>

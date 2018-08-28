@@ -1,0 +1,128 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Maestros.master.cs" Inherits="Interfaz_Web.MasterPages.Maestros" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<link rel="Stylesheet" type="text/css" media="screen" href="../Styles/EstiloMaster.css"/>
+    <title></title>
+    <link rel="shortcut icon" type="image/x-icon" href="~/imagenes/logo.ico" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .direccionIP
+        {
+            font-size: 10pt !important;
+            margin-top: 50px !important;
+            width: 46% !important;
+            text-align: right !important;
+            color: #313131;
+            font-family: Arial;
+            position: absolute;
+            top: 44px;
+            right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+    <%-- INICO ENCABEZADO --%>
+    <div class="pagina">
+    <div class="header">
+        <div class="brand">
+                <%--<asp:Image ID="Logo" ImageUrl="~/Imagenes/UPM_HORIZ.jpg" runat="server" CssClass="logo"/>--%>
+                <asp:Label ID="Label5" runat="server" Text="Sistema de Facturacion Electronica" CssClass="title"></asp:Label>
+               <asp:Label ID="lblIpTitle" runat="server" CssClass="direccionIP"></asp:Label>
+        </div>
+            <div class="menuSuperior">
+               <asp:LinkButton ID="lnkMaestros" runat="server" CssClass="menuSuperiorLink1" Text="MAESTROS" 
+                        onclick="lnkMaestros_Click" Font-Overline="false" CausesValidation="false"></asp:LinkButton>
+               <asp:LinkButton ID="lnkTransacciones" runat="server" CssClass="menuSuperiorLink2" Text="TRANSACCIONES" 
+                        onclick="lnkTransacciones_Click" Font-Overline="false" CausesValidation="false"></asp:LinkButton>
+               <asp:LinkButton ID="lnkReportes" runat="server" CssClass="menuSuperiorLink3" Text="REPORTES" 
+                        onclick="lnkReportes_Click" Font-Overline="false" CausesValidation="false"></asp:LinkButton>
+               <asp:LinkButton ID="lnkCerrarSession" runat="server" CssClass="menuSuperiorLink5" Text="CERRAR SESION" 
+                        onclick="lbCerrarSesion_Click" Font-Overline="false" CausesValidation="false"></asp:LinkButton>
+                
+                 
+            </div>
+        
+    </div>
+    <div class="divSeparacionBrand">
+         <asp:Image ID="Image5" ImageUrl="~/Imagenes/botonesSep.png" runat="server" Width="960px"/>
+    </div>
+    <%-- FIN ENCABEZADO --%>
+
+
+
+
+    <%-- INICIO CUERPO --%>
+    <div class="leftSideBar">
+        <div class="divTitulo">
+            <asp:Label ID="lblReportes" runat="server" Text="Maestros"  Font-Bold="true"></asp:Label>
+        
+        </div>
+        
+        <div >
+            <ul>                
+                <li><asp:HyperLink ID="hClientes" runat="server" CssClass="menuIzquierdaLink" CausesValidation="false" NavigateUrl="~/Maestros/MaestroClientes.aspx" Font-Overline="false">  <asp:Label ID="Label1" runat="server" Text="Clientes" ></asp:Label></asp:HyperLink></li>
+            </ul>
+         </div>
+         
+         <div>
+            <asp:Image ID="Image1" ImageUrl="~/Imagenes/menuSep.png" runat="server" CssClass="divMenuSeparador"/>
+         </div>
+         <div >
+            <ul>
+                <li><asp:HyperLink ID="hGrupo" runat="server" CssClass="menuIzquierdaLink" CausesValidation="false" NavigateUrl="~/Maestros/MaestroGrupos.aspx" Font-Overline="false">  <asp:Label ID="Label4" runat="server" Text="Grupos" ></asp:Label></asp:HyperLink></li>
+            </ul>
+         </div>
+         <div>
+            <asp:Image ID="Image2" ImageUrl="~/Imagenes/menuSep.png" runat="server" CssClass="divMenuSeparador"/>
+         </div>
+         <div>
+            <ul>
+                <li><asp:HyperLink ID="hProducto" runat="server" CssClass="menuIzquierdaLink" CausesValidation="false" NavigateUrl="~/Maestros/MaestrosProductos.aspx" Font-Overline="false">  <asp:Label ID="Label3" runat="server" Text="Productos" ></asp:Label></asp:HyperLink></li>
+            </ul> 
+         </div>
+         <div>
+            <asp:Image ID="Image7" ImageUrl="~/Imagenes/menuSep.png" runat="server" CssClass="divMenuSeparador"/>
+         </div>
+         <div >
+            <ul>
+                <li><asp:HyperLink ID="hSubGrupo" runat="server" CssClass="menuIzquierdaLink" CausesValidation="false" NavigateUrl="~/Maestros/MaestroSubGrupos.aspx" Font-Overline="false">  <asp:Label ID="Label7" runat="server" Text="SubGrupos" ></asp:Label></asp:HyperLink></li>
+            </ul>
+         </div>
+        <div>
+            <asp:Image ID="Image4" ImageUrl="~/Imagenes/menuSep.png" runat="server" CssClass="divMenuSeparador"/>
+         </div>
+         <div >
+            <ul>
+                <li><asp:HyperLink ID="hVendedor" runat="server" CssClass="menuIzquierdaLink" CausesValidation="false" NavigateUrl="~/Maestros/MaestrosVendedores.aspx" Font-Overline="false">  <asp:Label ID="Label2" runat="server" Text="Vendedores" ></asp:Label></asp:HyperLink></li>
+            </ul>
+         </div>
+        <div>
+            <asp:Image ID="Image3" ImageUrl="~/Imagenes/menuSep.png" runat="server" CssClass="divMenuSeparador"/>
+         </div>
+         <div >
+            <ul>
+                <li><asp:HyperLink ID="hZonas" runat="server" CssClass="menuIzquierdaLink" CausesValidation="false" NavigateUrl="~/Maestros/MaestrosZonas.aspx" Font-Overline="false">  <asp:Label ID="Label6" runat="server" Text="Zonas" ></asp:Label></asp:HyperLink></li>
+            </ul>
+         </div>
+        <div>
+            <asp:Image ID="Image6" ImageUrl="~/Imagenes/menuSep.png" runat="server" CssClass="divMenuSeparador"/>
+         </div>
+         
+    </div>
+    <%-- FIN CUERPO --%>
+
+    <div class="content">
+        <asp:ContentPlaceHolder ID="Contenido" runat="server" >
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </div>
+    </form>
+</body>
+</html>

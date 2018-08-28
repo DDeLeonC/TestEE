@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://ucfe.uruware.com/" elementFormDefault="qualified" targetNamespace="http://ucfe.uruware.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://prod6531.ucfe.com.uy/Query/WebServicesFE.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/TrxServer.Cfe.WebServices" />
+  <xs:import schemaLocation="https://prod6531.ucfe.com.uy/Query/WebServicesFE.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="https://prod6531.ucfe.com.uy/Query/WebServicesFE.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/TrxServer.Cfe.Common" />
+  <xs:element name="ComprobantesPorEmpresaDenegadosPorDgi">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="rut" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fechaComprobante" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ComprobantesPorEmpresaDenegadosPorDgiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/TrxServer.Cfe.WebServices" minOccurs="0" name="ComprobantesPorEmpresaDenegadosPorDgiResult" nillable="true" type="q1:ArrayOfComprobante" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ComprobantesPorEmpresaPorSerEnviadosADgi">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="rut" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fechaComprobante" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ComprobantesPorEmpresaPorSerEnviadosADgiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ComprobantesPorEmpresaPorSerEnviadosADgiResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ComprobantesPorSucursalDenegadosPorDgi">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="codigoComercio" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fechaComprobante" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ComprobantesPorSucursalDenegadosPorDgiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/TrxServer.Cfe.WebServices" minOccurs="0" name="ComprobantesPorSucursalDenegadosPorDgiResult" nillable="true" type="q2:ArrayOfComprobante" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ComprobantesPorSucursalPorSerEnviadosADgi">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="codigoComercio" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fechaComprobante" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ComprobantesPorSucursalPorSerEnviadosADgiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ComprobantesPorSucursalPorSerEnviadosADgiResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ComprobantesPorCajaDenegadosPorDgi">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="codigoTerminal" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fechaComprobante" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ComprobantesPorCajaDenegadosPorDgiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/TrxServer.Cfe.WebServices" minOccurs="0" name="ComprobantesPorCajaDenegadosPorDgiResult" nillable="true" type="q3:ArrayOfComprobante" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ComprobantesPorCajaPorSerEnviadosADgi">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="codigoTerminal" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fechaComprobante" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ComprobantesPorCajaPorSerEnviadosADgiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ComprobantesPorCajaPorSerEnviadosADgiResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultaHtmlPorNumero">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="rut" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tipoCfe" type="xs:int" />
+        <xs:element minOccurs="0" name="serieCfe" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="numeroCfe" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultaHtmlPorNumeroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsultaHtmlPorNumeroResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultaHtmlConMontoYCodigo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="rut" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tipoCfe" type="xs:int" />
+        <xs:element minOccurs="0" name="serieCfe" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="numeroCfe" type="xs:int" />
+        <xs:element minOccurs="0" name="monto" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codigoSeguridad" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultaHtmlConMontoYCodigoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsultaHtmlConMontoYCodigoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultaAvanzadaConMontoYCodigo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="rut" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tipoCfe" type="xs:int" />
+        <xs:element minOccurs="0" name="serieCfe" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="numeroCfe" type="xs:int" />
+        <xs:element minOccurs="0" name="monto" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codigoSeguridad" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultaAvanzadaConMontoYCodigoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/TrxServer.Cfe.WebServices" minOccurs="0" name="ConsultaAvanzadaConMontoYCodigoResult" nillable="true" type="q4:RespuestaConsultaCfe" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerResultadoConciliacion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="rut" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="identificador" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="formato" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerResultadoConciliacionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ObtenerResultadoConciliacionResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RealizarConciliacion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="rut" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="conciliacion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fechaDesde" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="fechaHasta" type="xs:dateTime" />
+        <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="nombreParametros" nillable="true" type="q5:ArrayOfstring" />
+        <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="valoresParametros" nillable="true" type="q6:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RealizarConciliacionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RealizarConciliacionResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerPdf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="rut" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tipoCfe" type="xs:int" />
+        <xs:element minOccurs="0" name="serieCfe" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="numeroCfe" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerPdfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ObtenerPdfResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerarImagen">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="rut" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tipoCfe" type="xs:int" />
+        <xs:element minOccurs="0" name="serieCfe" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="numeroCfe" type="xs:int" />
+        <xs:element minOccurs="0" name="formato" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dpiX" type="xs:int" />
+        <xs:element minOccurs="0" name="dpiY" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerarImagenResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GenerarImagenResult" nillable="true" type="q7:ArrayOfbase64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerPdfConParametros">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="rut" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tipoCfe" type="xs:int" />
+        <xs:element minOccurs="0" name="serieCfe" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="numeroCfe" type="xs:int" />
+        <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="nombreParametros" nillable="true" type="q8:ArrayOfstring" />
+        <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="valoresParametros" nillable="true" type="q9:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerPdfConParametrosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ObtenerPdfConParametrosResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerarImagenConParametros">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="rut" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tipoCfe" type="xs:int" />
+        <xs:element minOccurs="0" name="serieCfe" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="numeroCfe" type="xs:int" />
+        <xs:element minOccurs="0" name="formato" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dpiX" type="xs:int" />
+        <xs:element minOccurs="0" name="dpiY" type="xs:int" />
+        <xs:element xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="nombreParametros" nillable="true" type="q10:ArrayOfstring" />
+        <xs:element xmlns:q11="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="valoresParametros" nillable="true" type="q11:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerarImagenConParametrosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GenerarImagenConParametrosResult" nillable="true" type="q12:ArrayOfbase64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerPdfCfeRecibido">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="rut" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rutRecibido" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tipoCfe" type="xs:int" />
+        <xs:element minOccurs="0" name="serieCfe" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="numeroCfe" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerPdfCfeRecibidoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ObtenerPdfCfeRecibidoResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerEstadoCfeRecibido">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="rut" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rutRecibido" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tipoCfe" type="xs:int" />
+        <xs:element minOccurs="0" name="serieCfe" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="numeroCfe" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerEstadoCfeRecibidoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/TrxServer.Cfe.Common" minOccurs="0" name="ObtenerEstadoCfeRecibidoResult" type="q13:EstadoCfeRecibido" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerarImagenCfeRecibido">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="rut" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rutRecibido" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tipoCfe" type="xs:int" />
+        <xs:element minOccurs="0" name="serieCfe" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="numeroCfe" type="xs:int" />
+        <xs:element minOccurs="0" name="formato" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dpiX" type="xs:int" />
+        <xs:element minOccurs="0" name="dpiY" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerarImagenCfeRecibidoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GenerarImagenCfeRecibidoResult" nillable="true" type="q14:ArrayOfbase64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerarRollo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="rut" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tipoCfe" type="xs:int" />
+        <xs:element minOccurs="0" name="serieCfe" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="numeroCfe" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerarRolloResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GenerarRolloResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerarRolloConParametros">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="rut" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tipoCfe" type="xs:int" />
+        <xs:element minOccurs="0" name="serieCfe" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="numeroCfe" type="xs:int" />
+        <xs:element xmlns:q15="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="nombreParametros" nillable="true" type="q15:ArrayOfstring" />
+        <xs:element xmlns:q16="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="valoresParametros" nillable="true" type="q16:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerarRolloConParametrosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GenerarRolloConParametrosResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

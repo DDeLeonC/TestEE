@@ -1,0 +1,9 @@
+C:\Users\Usuario\Documents\EEIntegra\Nacrisul\SistemaFacturacionElectronicaNacrisul\Dominio\bin\Debug\Dominio.dll.config
+C:\Users\Usuario\Documents\EEIntegra\Nacrisul\SistemaFacturacionElectronicaNacrisul\Dominio\bin\Debug\Dominio.dll
+C:\Users\Usuario\Documents\EEIntegra\Nacrisul\SistemaFacturacionElectronicaNacrisul\Dominio\bin\Debug\Dominio.pdb
+C:\Users\Usuario\Documents\EEIntegra\Nacrisul\SistemaFacturacionElectronicaNacrisul\Dominio\bin\Debug\AjaxControlToolkit.dll
+C:\Users\Usuario\Documents\EEIntegra\Nacrisul\SistemaFacturacionElectronicaNacrisul\Dominio\bin\Debug\EntityFramework.dll
+C:\Users\Usuario\Documents\EEIntegra\Nacrisul\SistemaFacturacionElectronicaNacrisul\Dominio\bin\Debug\EntityFramework.xml
+C:\Users\Usuario\Documents\EEIntegra\Nacrisul\SistemaFacturacionElectronicaNacrisul\Dominio\obj\Debug\Dominio.dll
+C:\Users\Usuario\Documents\EEIntegra\Nacrisul\SistemaFacturacionElectronicaNacrisul\Dominio\obj\Debug\Dominio.pdb
+C:\Users\Usuario\Documents\EEIntegra\Nacrisul\SistemaFacturacionElectronicaNacrisul\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache

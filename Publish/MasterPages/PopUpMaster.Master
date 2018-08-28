@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PopUpMaster.master.cs" Inherits="InterfazWeb.MasterPages.PopUpMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" style="overflow-x: hidden;">
+<head id="Head1" runat="server">
+<link rel="Stylesheet" type="text/css" media="screen" href="../Styles/EstiloMaster.css"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <div class="pagina">
+        <%-- FIN ENCABEZADO --%>
+        <div class="ContentPopUp" style="top:0; position:absolute;">
+            <asp:ContentPlaceHolder ID="Contenido" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

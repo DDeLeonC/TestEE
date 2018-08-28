@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8690821a-1181-4c1d-8804-835958a5bf81" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://prod6531.ucfe.com.uy/Inbox/CfeService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CfeService.wsdl" MetadataType="Wsdl" ID="d46d2a53-8393-4ea4-a8cc-887616f900cb" SourceId="1" SourceUrl="https://prod6531.ucfe.com.uy/Inbox/CfeService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="CfeService.disco" MetadataType="Disco" ID="2c4c5c0e-d976-4cc6-9796-8ee3f5a1029a" SourceId="1" SourceUrl="https://prod6531.ucfe.com.uy/Inbox/CfeService.svc?disco" />
+    <MetadataFile FileName="CfeService.xsd" MetadataType="Schema" ID="be7c186d-acf0-47e2-b643-88e254ef93bb" SourceId="1" SourceUrl="https://prod6531.ucfe.com.uy/Inbox/CfeService.svc?xsd=xsd1" />
+    <MetadataFile FileName="CfeService1.xsd" MetadataType="Schema" ID="c7c196f0-7a88-45c5-9750-9da8c563c3c7" SourceId="1" SourceUrl="https://prod6531.ucfe.com.uy/Inbox/CfeService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CfeService1.wsdl" MetadataType="Wsdl" ID="759183e3-b651-4a09-b195-255db00fcb67" SourceId="1" SourceUrl="https://prod6531.ucfe.com.uy/Inbox/CfeService.svc?wsdl" />
+    <MetadataFile FileName="CfeService2.xsd" MetadataType="Schema" ID="73f17ce0-04f1-49b0-93a3-7aa678fe3738" SourceId="1" SourceUrl="https://prod6531.ucfe.com.uy/Inbox/CfeService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

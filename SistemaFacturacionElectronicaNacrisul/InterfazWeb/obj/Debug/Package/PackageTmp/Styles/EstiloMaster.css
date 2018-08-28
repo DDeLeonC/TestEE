@@ -1,0 +1,309 @@
+﻿body 
+{
+  font-family:Arial;
+  font-size:12px; 
+  
+ }
+
+/* ENCABEZADO */
+
+.header {
+   width :960px;
+   height:125px;
+   color: #f9f9f9;
+  
+}
+
+.center {
+  position:absolute;
+  left:438px;
+  top:400px; 
+  font-size:12pt;
+  font-family: "Arial";
+  color: #464646;
+
+}
+
+.logo
+{
+    position: absolute;
+	right:42px;
+	height: 91px;
+    top: 17px;
+    width:244px;
+    
+}
+
+.divlogoInicio
+{
+    position: absolute;
+	left:480px;
+	top: 104px;
+}
+
+.logoInicio
+{
+    height:150px;
+    width:100px;
+}
+
+.divBotonInicio
+{
+    position: absolute;
+    width:450px;
+	right:260px;
+	top: 365px;
+}
+
+.divTablaLogin
+{
+    position:absolute;
+    top:279px;
+    right:261px;
+    margin-top: 5px;
+}
+
+.menuSuperior
+{
+    position: absolute;
+	height: 27px;
+	border-color:White;
+	border-style:solid;
+	background-color:#585858;
+	top: 0;
+	left:12px;
+    width: 960px;
+    font-size:10pt;
+    font-family:Arial;
+    color:#c2c2c2;
+    outline:none;
+     
+}
+
+
+.menuSuperiorLink1 
+{
+    position:absolute;
+    top: 6px;
+    left:10px;
+    font-size:10pt;
+    font-family:Arial;
+    color:#c2c2c2;
+    outline:none;
+    
+}
+
+.menuSuperiorLink2
+{
+    position:absolute;
+    top: 6px;
+    left:100px;
+    font-size:10pt;
+    font-family:Arial;
+    color:#c2c2c2;
+    outline:none;
+    ; 
+}
+
+.menuSuperiorLink3
+{
+    position:absolute;
+    top: 6px;
+    left:228px;
+    font-size:10pt;
+    font-family:Arial;
+    color:#c2c2c2;
+    outline:none;
+   
+}
+
+.menuSuperiorLink4
+{
+    position:absolute;
+    top: 6px;
+    left:318px;
+    font-size:10pt;
+    font-family:Arial;
+    color:#c2c2c2;
+    outline:none;
+   
+}
+.menuSuperiorLinkCerrarSesion
+{
+    position:absolute;
+    top: 6px;
+    right:10px;
+    font-size:10pt;
+    font-family:Arial;
+    color:#c2c2c2;
+    outline:none;
+   
+}
+.menuSuperiorLink5
+{
+    position:absolute;
+    top: 6px;
+    right:10px;
+    font-size:10pt;
+    font-family:Arial;
+    color:#c2c2c2;
+    outline:none;
+   
+}
+
+
+.leftSideBar 
+{
+    float: left;
+	position: absolute;
+	left:12px;
+	top: 172px;
+	width: 193px;
+    
+    color: #0181b7;
+    font-family:Arial;
+    font-size:11px;
+    outline:none;
+    height:500px;
+     
+}
+
+.leftSideBar ul 
+{
+    padding:0px;
+}
+
+
+.leftSideBar li
+{
+    overflow:hidden;
+    border-top: solid 1px #00000;
+}
+
+.leftSideBar li a:hover
+{
+    color:#757575;
+    font-weight:bold;
+}
+
+.menuIzquierdaLink
+{
+    color: #0181b7;
+    font-family:Arial;
+    font-size:12px;
+    outline:none;
+    font-style:normal;
+    font-variant:normal;
+   
+}
+
+.imagenMenu
+{
+    float:left;
+}
+
+.content
+{
+    float: right;
+    padding: 0;
+    width: 742px;
+    position:absolute;
+    left:229px;
+    top:172px;
+    
+}
+.content2
+{
+    float: right;
+    padding: 0;
+    position:absolute;
+    width:960px;
+    top:172px;
+    
+}
+
+.bodyText
+{
+    color:#464646; 
+    font-size:12pt;
+    font-family:Arial; 
+              
+}
+
+
+.divTitulo
+{
+    font-size: 15pt;
+    
+    color:#464646;
+    font-family:Arial ;
+    width: 100%;
+    text-align:center; 
+    margin:auto; 
+    background-color: #dce1e0;
+}
+
+.divBotones
+{
+    font-size: 15pt;
+    
+    color:#464646;
+    font-family:Arial ;
+    width: 100%;
+     
+   
+}
+
+.title
+{
+    font-size: 22pt;
+    color:#313131;
+    font-family:Arial ;
+    position:absolute;
+    top:44px;
+    left:15px;
+     
+}
+
+/* BRAND AREA */
+
+.brand
+{
+    position:absolute;
+    width:960px;
+    height:125px;
+    left:12px;
+    top:32px;
+    background-image:url(../Imagenes/brand.png);
+    background-repeat:no-repeat;
+    background-position:left;
+}
+
+.divMenuSeparador
+{
+   width: 193px; 
+}
+
+.pagina
+{  
+    margin: 0 auto;
+	overflow: visible;
+	position: relative;
+	text-align: left;
+	width:960px; 
+}
+
+.divSeparacionBrand
+{
+  position:absolute;
+  left:12px;
+  top:152px;
+  height:10px;
+}
+
+.grillaFacturacion
+{
+    max-height: 180px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}

@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Login.master.cs" Inherits="InterfazWeb.MasterPages.Login" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<link rel="Stylesheet" type="text/css" media="screen" href="../Styles/EstiloMaster.css"/>
+    <title></title>
+    <link rel="shortcut icon" type="image/x-icon" href="~/imagenes/logo.ico" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .direccionIP
+        {
+            font-size: 10pt !important;
+            margin-top: 50px !important;
+            width: 46% !important;
+            text-align: right !important;
+            color:#313131;
+            font-family:Arial ;
+            position:absolute;
+            top:44px;
+            right:15px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div><div class="pagina">
+    <div class="header">
+        <div class="brand" >
+                <asp:Label ID="Label5" runat="server" Text="Sistema de Facturacion Electronica" CssClass="title"></asp:Label>
+                <asp:Label ID="lblIpTitle" runat="server" CssClass="direccionIP"></asp:Label>
+        </div>
+        
+            
+        
+    </div>
+    <div class="divSeparacionBrand">
+         <asp:Image ID="Image1" ImageUrl="~/Imagenes/botonesSep.png" runat="server" Width="960px"/>
+    </div>
+    <%-- FIN ENCABEZADO --%>
+    <div class="content2" style="left: 12px;">
+        <asp:ContentPlaceHolder ID="Contenido" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </div>
+    </form>
+</body>
+</html>

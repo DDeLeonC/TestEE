@@ -1,0 +1,788 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7E7F1F7C-DA1B-4A63-B66C-430EA03A1F10}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InterfazWeb</RootNamespace>
+    <AssemblyName>InterfazWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ASP.Web.UI.PopupControl">
+      <HintPath>..\packages\ASP.Web.UI.PopupControl.dll</HintPath>
+    </Reference>
+    <Reference Include="ClosedXML, Version=0.75.0.0, Culture=neutral, PublicKeyToken=fd1eb21b62ae805b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="chosen-sprite.png" />
+    <Content Include="chosen.css" />
+    <Content Include="chosen.jquery.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="Imagenes\aceptar.bmp" />
+    <Content Include="Imagenes\Agregar.png" />
+    <Content Include="Imagenes\botonesSep.png" />
+    <Content Include="Imagenes\brand.png" />
+    <Content Include="Imagenes\cancelar.bmp" />
+    <Content Include="Imagenes\chosen-sprite.png" />
+    <Content Include="Imagenes\datetime.png" />
+    <Content Include="Imagenes\Detalle.ico" />
+    <Content Include="Imagenes\expander_none.gif" />
+    <Content Include="Imagenes\full_brand_image.jpg" />
+    <Content Include="Imagenes\grd_alt.png" />
+    <Content Include="Imagenes\grd_head.png" />
+    <Content Include="Imagenes\grd_pgr.png" />
+    <Content Include="Imagenes\guardando.png" />
+    <Content Include="Imagenes\logo.ico" />
+    <Content Include="Imagenes\logo.PNG" />
+    <Content Include="Imagenes\menuSep.png" />
+    <Content Include="Imagenes\Modificar.ico" />
+    <Content Include="Imagenes\nuevo.png" />
+    <Content Include="Imagenes\nuevoPersona.png" />
+    <Content Include="Imagenes\pdf.png" />
+    <Content Include="jquery.min.js" />
+    <Content Include="Logon.aspx" />
+    <Content Include="Maestros\ListaMaestros.aspx" />
+    <Content Include="Maestros\MaestroClientes.aspx" />
+    <Content Include="Maestros\MaestroGrupos.aspx" />
+    <Content Include="Maestros\MaestrosProductos.aspx" />
+    <Content Include="Maestros\MaestroSubGrupos.aspx" />
+    <Content Include="Maestros\MaestrosVendedores.aspx" />
+    <Content Include="Maestros\MaestrosZonas.aspx" />
+    <Content Include="Maestros\NuevaZona.aspx" />
+    <Content Include="Maestros\NuevoCliente.aspx" />
+    <Content Include="Maestros\NuevoGrupo.aspx" />
+    <Content Include="Maestros\NuevoProducto.aspx" />
+    <Content Include="Maestros\NuevoSubGrupo.aspx" />
+    <Content Include="Maestros\NuevoVendedor.aspx" />
+    <Content Include="MasterPages\Login.Master" />
+    <Content Include="MasterPages\PopUpMaster.Master" />
+    <None Include="Service References\ServiceReference1Prod\CfeService.wsdl" />
+    <None Include="Service References\ServiceReference1Prod\CfeService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1Prod\CfeService1.wsdl" />
+    <None Include="Service References\ServiceReference1Prod\CfeService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1Prod\CfeService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1Prod\InterfazWeb.ServiceReference1Prod.RespBody.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <Content Include="Reportes\ConsultaDocumentos.aspx" />
+    <Content Include="Reportes\ConsultaDocumentosAnulados.aspx" />
+    <Content Include="Reportes\ConsultaListadoFacturacion.aspx" />
+    <Content Include="Reportes\ConsultaRecibos.aspx" />
+    <Content Include="Reportes\ConsultarEstadoDocumento.aspx" />
+    <Content Include="Reportes\InformeCobrosCliente.aspx" />
+    <Content Include="Reportes\InformePorcentajesClientes.aspx" />
+    <Content Include="Reportes\InformePorcentajesMercaderia.aspx" />
+    <Content Include="Reportes\ListadoClienteProducto.aspx" />
+    <Content Include="Reportes\ListaReportes.aspx" />
+    <Content Include="Reportes\ReporteBalancePorFecha.aspx" />
+    <Content Include="Reportes\ReporteDocumentosVencidos.aspx" />
+    <Content Include="Reportes\ReporteEstadoCuentaCliente.aspx" />
+    <Content Include="Reportes\ResumenVentas.aspx" />
+    <Content Include="Reportes\VisorExcel.aspx" />
+    <Content Include="Reportes\VisorPDFReportes.aspx" />
+    <Content Include="Reportes\webFormExcel.aspx" />
+    <None Include="Service References\ServiceReference1\CfeService.wsdl" />
+    <None Include="Service References\ServiceReference1\CfeService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\CfeService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\CfeService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\InterfazWeb.ServiceReference1.RespBody.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference2Prod\ConsultaCfe.wsdl" />
+    <None Include="Service References\ServiceReference2Prod\InterfazWeb.ServiceReference2Prod.Comprobante.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference2Prod\InterfazWeb.ServiceReference2Prod.EstadoCfeRecibido.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference2Prod\InterfazWeb.ServiceReference2Prod.RespuestaConsultaCfe.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference2Prod\WebServicesFE.wsdl" />
+    <None Include="Service References\ServiceReference2Prod\WebServicesFE.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference2Prod\WebServicesFE1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference2Prod\WebServicesFE2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference2Prod\WebServicesFE3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference2Prod\WebServicesFE4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference2\ConsultaCfe.wsdl" />
+    <None Include="Service References\ServiceReference2\InterfazWeb.ServiceReference2.Comprobante.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference2\InterfazWeb.ServiceReference2.EstadoCfeRecibido.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference2\InterfazWeb.ServiceReference2.RespuestaConsultaCfe.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference2\WebServicesFE.disco" />
+    <None Include="Service References\ServiceReference2\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReference2\configuration.svcinfo" />
+    <None Include="Service References\ServiceReference2\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Scripts\chosen.jquery.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <None Include="Service References\ServiceReference1Prod\CfeService.disco" />
+    <None Include="Service References\ServiceReference1Prod\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReference1Prod\configuration.svcinfo" />
+    <None Include="Service References\ServiceReference1Prod\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ServiceReference2Prod\WebServicesFE.disco" />
+    <None Include="Service References\ServiceReference2Prod\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReference2Prod\configuration.svcinfo" />
+    <None Include="Service References\ServiceReference2Prod\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ServiceReference1\CfeService.disco" />
+    <None Include="Service References\ServiceReference1\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReference1\configuration.svcinfo" />
+    <None Include="Service References\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Styles\chosen.css" />
+    <Content Include="Styles\EstiloBotones.css" />
+    <Content Include="Styles\EstiloGridView.css" />
+    <Content Include="Styles\EstiloMaster.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Transacciones\ActualizarEstados.aspx" />
+    <Content Include="Transacciones\AnularDocumento.aspx" />
+    <Content Include="Transacciones\AnularRecibo.aspx" />
+    <Content Include="Transacciones\AsignarPagos.aspx" />
+    <Content Include="Transacciones\CobroDeudores.aspx" />
+    <Content Include="Transacciones\Facturas.aspx" />
+    <Content Include="Transacciones\ListaTransacciones.aspx" />
+    <Content Include="Transacciones\logo.bmp" />
+    <Content Include="Imagenes\logo.JPG" />
+    <Content Include="Transacciones\NotaCredito.aspx" />
+    <Content Include="Transacciones\NotaDebito.aspx" />
+    <Content Include="Transacciones\NuevoClientePopUp.aspx" />
+    <Content Include="Transacciones\NuevoProductoPopUp.aspx" />
+    <Content Include="Transacciones\Resguardo.aspx" />
+    <Content Include="Transacciones\VisorPDF.aspx" />
+    <Content Include="Transacciones\webformPDF.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <None Include="Service References\ServiceReference2\WebServicesFE.wsdl" />
+    <None Include="Service References\ServiceReference2\WebServicesFE.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference2\WebServicesFE1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference2\WebServicesFE2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference2\WebServicesFE3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference2\WebServicesFE4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Logon.aspx.cs">
+      <DependentUpon>Logon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logon.aspx.designer.cs">
+      <DependentUpon>Logon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Maestros\ListaMaestros.aspx.cs">
+      <DependentUpon>ListaMaestros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Maestros\ListaMaestros.aspx.designer.cs">
+      <DependentUpon>ListaMaestros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Maestros\MaestroClientes.aspx.cs">
+      <DependentUpon>MaestroClientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Maestros\MaestroClientes.aspx.designer.cs">
+      <DependentUpon>MaestroClientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Maestros\MaestroGrupos.aspx.cs">
+      <DependentUpon>MaestroGrupos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Maestros\MaestroGrupos.aspx.designer.cs">
+      <DependentUpon>MaestroGrupos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Maestros\MaestrosProductos.aspx.cs">
+      <DependentUpon>MaestrosProductos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Maestros\MaestrosProductos.aspx.designer.cs">
+      <DependentUpon>MaestrosProductos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Maestros\MaestroSubGrupos.aspx.cs">
+      <DependentUpon>MaestroSubGrupos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Maestros\MaestroSubGrupos.aspx.designer.cs">
+      <DependentUpon>MaestroSubGrupos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Maestros\MaestrosVendedores.aspx.cs">
+      <DependentUpon>MaestrosVendedores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Maestros\MaestrosVendedores.aspx.designer.cs">
+      <DependentUpon>MaestrosVendedores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Maestros\MaestrosZonas.aspx.cs">
+      <DependentUpon>MaestrosZonas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Maestros\MaestrosZonas.aspx.designer.cs">
+      <DependentUpon>MaestrosZonas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Maestros\NuevaZona.aspx.cs">
+      <DependentUpon>NuevaZona.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Maestros\NuevaZona.aspx.designer.cs">
+      <DependentUpon>NuevaZona.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Maestros\NuevoCliente.aspx.cs">
+      <DependentUpon>NuevoCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Maestros\NuevoCliente.aspx.designer.cs">
+      <DependentUpon>NuevoCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Maestros\NuevoGrupo.aspx.cs">
+      <DependentUpon>NuevoGrupo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Maestros\NuevoGrupo.aspx.designer.cs">
+      <DependentUpon>NuevoGrupo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Maestros\NuevoProducto.aspx.cs">
+      <DependentUpon>NuevoProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Maestros\NuevoProducto.aspx.designer.cs">
+      <DependentUpon>NuevoProducto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Maestros\NuevoSubGrupo.aspx.cs">
+      <DependentUpon>NuevoSubGrupo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Maestros\NuevoSubGrupo.aspx.designer.cs">
+      <DependentUpon>NuevoSubGrupo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Maestros\NuevoVendedor.aspx.cs">
+      <DependentUpon>NuevoVendedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Maestros\NuevoVendedor.aspx.designer.cs">
+      <DependentUpon>NuevoVendedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\Login.Master.cs">
+      <DependentUpon>Login.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\Login.Master.designer.cs">
+      <DependentUpon>Login.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\Maestros.Master.cs">
+      <DependentUpon>Maestros.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\Maestros.Master.designer.cs">
+      <DependentUpon>Maestros.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\PopUpMaster.Master.cs">
+      <DependentUpon>PopUpMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\PopUpMaster.Master.designer.cs">
+      <DependentUpon>PopUpMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\Principal.Master.cs">
+      <DependentUpon>Principal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\Principal.Master.designer.cs">
+      <DependentUpon>Principal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\Reportes.Master.cs">
+      <DependentUpon>Reportes.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\Reportes.Master.designer.cs">
+      <DependentUpon>Reportes.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\Transacciones.Master.cs">
+      <DependentUpon>Transacciones.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\Transacciones.Master.designer.cs">
+      <DependentUpon>Transacciones.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes\ConsultaDocumentos.aspx.cs">
+      <DependentUpon>ConsultaDocumentos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\ConsultaDocumentos.aspx.designer.cs">
+      <DependentUpon>ConsultaDocumentos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ConsultaDocumentosAnulados.aspx.cs">
+      <DependentUpon>ConsultaDocumentosAnulados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\ConsultaDocumentosAnulados.aspx.designer.cs">
+      <DependentUpon>ConsultaDocumentosAnulados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ConsultaListadoFacturacion.aspx.cs">
+      <DependentUpon>ConsultaListadoFacturacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\ConsultaListadoFacturacion.aspx.designer.cs">
+      <DependentUpon>ConsultaListadoFacturacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ConsultaRecibos.aspx.cs">
+      <DependentUpon>ConsultaRecibos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\ConsultaRecibos.aspx.designer.cs">
+      <DependentUpon>ConsultaRecibos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ConsultarEstadoDocumento.aspx.cs">
+      <DependentUpon>ConsultarEstadoDocumento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\ConsultarEstadoDocumento.aspx.designer.cs">
+      <DependentUpon>ConsultarEstadoDocumento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\InformeCobrosCliente.aspx.cs">
+      <DependentUpon>InformeCobrosCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\InformeCobrosCliente.aspx.designer.cs">
+      <DependentUpon>InformeCobrosCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\InformePorcentajesClientes.aspx.cs">
+      <DependentUpon>InformePorcentajesClientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\InformePorcentajesClientes.aspx.designer.cs">
+      <DependentUpon>InformePorcentajesClientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\InformePorcentajesMercaderia.aspx.cs">
+      <DependentUpon>InformePorcentajesMercaderia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\InformePorcentajesMercaderia.aspx.designer.cs">
+      <DependentUpon>InformePorcentajesMercaderia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ListadoClienteProducto.aspx.cs">
+      <DependentUpon>ListadoClienteProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\ListadoClienteProducto.aspx.designer.cs">
+      <DependentUpon>ListadoClienteProducto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ListaReportes.aspx.cs">
+      <DependentUpon>ListaReportes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\ListaReportes.aspx.designer.cs">
+      <DependentUpon>ListaReportes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReporteBalancePorFecha.aspx.cs">
+      <DependentUpon>ReporteBalancePorFecha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteBalancePorFecha.aspx.designer.cs">
+      <DependentUpon>ReporteBalancePorFecha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReporteDocumentosVencidos.aspx.cs">
+      <DependentUpon>ReporteDocumentosVencidos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteDocumentosVencidos.aspx.designer.cs">
+      <DependentUpon>ReporteDocumentosVencidos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReporteEstadoCuentaCliente.aspx.cs">
+      <DependentUpon>ReporteEstadoCuentaCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteEstadoCuentaCliente.aspx.designer.cs">
+      <DependentUpon>ReporteEstadoCuentaCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ResumenVentas.aspx.cs">
+      <DependentUpon>ResumenVentas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\ResumenVentas.aspx.designer.cs">
+      <DependentUpon>ResumenVentas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\VisorExcel.aspx.cs">
+      <DependentUpon>VisorExcel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\VisorExcel.aspx.designer.cs">
+      <DependentUpon>VisorExcel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\VisorPDFReportes.aspx.cs">
+      <DependentUpon>VisorPDFReportes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\VisorPDFReportes.aspx.designer.cs">
+      <DependentUpon>VisorPDFReportes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\webFormExcel.aspx.cs">
+      <DependentUpon>webFormExcel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\webFormExcel.aspx.designer.cs">
+      <DependentUpon>webFormExcel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReference1Prod\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReference2Prod\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReference2\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TablaDetalle.cs" />
+    <Compile Include="TablaRetencion.cs" />
+    <Compile Include="Transacciones\ActualizarEstados.aspx.cs">
+      <DependentUpon>ActualizarEstados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transacciones\ActualizarEstados.aspx.designer.cs">
+      <DependentUpon>ActualizarEstados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transacciones\AnularDocumento.aspx.cs">
+      <DependentUpon>AnularDocumento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transacciones\AnularDocumento.aspx.designer.cs">
+      <DependentUpon>AnularDocumento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transacciones\AnularRecibo.aspx.cs">
+      <DependentUpon>AnularRecibo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transacciones\AnularRecibo.aspx.designer.cs">
+      <DependentUpon>AnularRecibo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transacciones\AsignarPagos.aspx.cs">
+      <DependentUpon>AsignarPagos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transacciones\AsignarPagos.aspx.designer.cs">
+      <DependentUpon>AsignarPagos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transacciones\CobroDeudores.aspx.cs">
+      <DependentUpon>CobroDeudores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transacciones\CobroDeudores.aspx.designer.cs">
+      <DependentUpon>CobroDeudores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transacciones\Facturas.aspx.cs">
+      <DependentUpon>Facturas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transacciones\Facturas.aspx.designer.cs">
+      <DependentUpon>Facturas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transacciones\ListaTransacciones.aspx.cs">
+      <DependentUpon>ListaTransacciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transacciones\ListaTransacciones.aspx.designer.cs">
+      <DependentUpon>ListaTransacciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transacciones\NotaCredito.aspx.cs">
+      <DependentUpon>NotaCredito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transacciones\NotaCredito.aspx.designer.cs">
+      <DependentUpon>NotaCredito.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transacciones\NotaDebito.aspx.cs">
+      <DependentUpon>NotaDebito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transacciones\NotaDebito.aspx.designer.cs">
+      <DependentUpon>NotaDebito.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transacciones\NuevoClientePopUp.aspx.cs">
+      <DependentUpon>NuevoClientePopUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transacciones\NuevoClientePopUp.aspx.designer.cs">
+      <DependentUpon>NuevoClientePopUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transacciones\NuevoProductoPopUp.aspx.cs">
+      <DependentUpon>NuevoProductoPopUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transacciones\NuevoProductoPopUp.aspx.designer.cs">
+      <DependentUpon>NuevoProductoPopUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transacciones\Resguardo.aspx.cs">
+      <DependentUpon>Resguardo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transacciones\Resguardo.aspx.designer.cs">
+      <DependentUpon>Resguardo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transacciones\VisorPDF.aspx.cs">
+      <DependentUpon>VisorPDF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transacciones\VisorPDF.aspx.designer.cs">
+      <DependentUpon>VisorPDF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transacciones\webformPDF.aspx.cs">
+      <DependentUpon>webformPDF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transacciones\webformPDF.aspx.designer.cs">
+      <DependentUpon>webformPDF.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPages\Maestros.Master" />
+    <Content Include="MasterPages\Principal.Master" />
+    <Content Include="MasterPages\Reportes.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dominio\Dominio.csproj">
+      <Project>{5ECFDB2F-E789-419B-895F-827E53CBB4EC}</Project>
+      <Name>Dominio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPages\Transacciones.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServiceReference1Prod\" />
+    <WCFMetadataStorage Include="Service References\ServiceReference1\" />
+    <WCFMetadataStorage Include="Service References\ServiceReference2Prod\" />
+    <WCFMetadataStorage Include="Service References\ServiceReference2\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="PhotoUploaderLib">
+      <Guid>{1CBE97AD-8AAE-41ED-AC48-550947492C9B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52035</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

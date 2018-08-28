@@ -1,0 +1,133 @@
+﻿
+/* Estilo para boton de generar reporte */
+
+.botonGenerarReporte {
+        
+    -moz-box-shadow:inset 0px 1px 0px 0px #ffe0b5;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #ffe0b5;
+    box-shadow:inset 0px 1px 0px 0px #ffe0b5;
+        
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ebebeb), color-stop(1, #e0e0e0));
+    background:-moz-linear-gradient(top, #ebebeb 5%, #e0e0e0 100%);
+    background:-webkit-linear-gradient(top, #ebebeb 5%, #e0e0e0 100%);
+    background:-o-linear-gradient(top, #ebebeb 5%, #e0e0e0 100%);
+    background:-ms-linear-gradient(top, #ebebeb 5%, #e0e0e0 100%);
+    background:linear-gradient(to bottom, #ebebeb 5%, #e0e0e0 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebebeb', endColorstr='#e0e0e0',GradientType=0);
+        
+    background-color:#ebebeb;
+        
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    border-radius:7px;
+        
+    border:1px solid #c2c2c2;
+        
+    display:inline-block;
+    color:#525252;
+    font-family:Trebuchet MS;
+    font-size:14px;
+    font-weight:normal;
+    padding:6px 11px;
+    text-decoration:none;
+        
+    text-shadow:0px 1px 0px #8f7f24;
+        
+}
+.botonGenerarReporte:hover {
+        
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e0e0e0), color-stop(1, #ebebeb));
+    background:-moz-linear-gradient(top, #e0e0e0 5%, #ebebeb 100%);
+    background:-webkit-linear-gradient(top, #e0e0e0 5%, #ebebeb 100%);
+    background:-o-linear-gradient(top, #e0e0e0 5%, #ebebeb 100%);
+    background:-ms-linear-gradient(top, #e0e0e0 5%, #ebebeb 100%);
+    background:linear-gradient(to bottom, #e0e0e0 5%, #ebebeb 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0e0e0', endColorstr='#ebebeb',GradientType=0);
+        
+    background-color:#e0e0e0;
+}
+.botonGenerarReporte:active {
+    position:relative;
+    top:1px;
+}
+
+/* Estilo para boton de LogIn y seleccionar establecimiento */
+.botonLogIn {
+        
+    -moz-box-shadow:inset 0px 1px 0px 0px #ffe0b5;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #ffe0b5;
+    box-shadow:inset 0px 1px 0px 0px #ffe0b5;
+        
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #c9c9c9));
+    background:-moz-linear-gradient(top, #ffffff 5%, #c9c9c9 100%);
+    background:-webkit-linear-gradient(top, #ffffff 5%, #c9c9c9 100%);
+    background:-o-linear-gradient(top, #ffffff 5%, #c9c9c9 100%);
+    background:-ms-linear-gradient(top, #ffffff 5%, #c9c9c9 100%);
+    background:linear-gradient(to bottom, #ffffff 5%, #c9c9c9 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#c9c9c9',GradientType=0);
+        
+    background-color:#ffffff;
+        
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    border-radius:7px;
+        
+    border:1px solid #c2c2c2;
+        
+    display:inline-block;
+    color:#525252;
+    font-family:Verdana;
+    font-size:14px;
+    font-weight:normal;
+    padding:6px 11px;
+    text-decoration:none;
+        
+    text-shadow:0px 1px 0px #8f7f24;
+    right:2px;
+    position:absolute; 
+}
+.botonLogIn:hover {
+        
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c9c9c9), color-stop(1, #ffffff));
+    background:-moz-linear-gradient(top, #c9c9c9 5%, #ffffff 100%);
+    background:-webkit-linear-gradient(top, #c9c9c9 5%, #ffffff 100%);
+    background:-o-linear-gradient(top, #c9c9c9 5%, #ffffff 100%);
+    background:-ms-linear-gradient(top, #c9c9c9 5%, #ffffff 100%);
+    background:linear-gradient(to bottom, #c9c9c9 5%, #ffffff 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c9c9c9', endColorstr='#ffffff',GradientType=0);
+        
+    background-color:#c9c9c9;
+    right:2px;
+    position:absolute;
+}
+.botonLogIn:active {
+    position:absolute;
+    top:1px;
+    right:2px;
+}
+
+.modal
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: black;
+        z-index: 99;
+        opacity: 0.8;
+        filter: alpha(opacity=80);
+        -moz-opacity: 0.8;
+        min-height: 100%;
+        width: 100%;
+    }
+    .loading
+    {
+        font-family: Arial;
+        font-size: 10pt;
+        border: 5px solid #67CFF5;
+        width: 200px;
+        height: 100px;
+        display: none;
+        position: fixed;
+        background-color: White;
+        z-index: 999;
+    }

@@ -1,0 +1,204 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Reportes.master.cs" Inherits="Interfaz_Web.MasterPages.Reportes" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link rel="Stylesheet" type="text/css" media="screen" href="../Styles/EstiloMaster.css" />
+    <title></title>
+    <link rel="shortcut icon" type="image/x-icon" href="~/imagenes/logo.ico" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .direccionIP
+        {
+            font-size: 10pt !important;
+            margin-top: 50px !important;
+            width: 46% !important;
+            text-align: right !important;
+            color: #313131;
+            font-family: Arial;
+            position: absolute;
+            top: 44px;
+            right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <%-- INICO ENCABEZADO --%>
+    <div class="pagina">
+        <div class="header">
+            <div class="brand">
+                <%--<asp:Image ID="Logo" ImageUrl="~/Imagenes/UPM_HORIZ.jpg" runat="server" CssClass="logo"/>--%>
+                <asp:Label ID="Label5" runat="server" Text="Sistema de Facturacion Electronica" CssClass="title"></asp:Label>
+                <asp:Label ID="lblIpTitle" runat="server" CssClass="direccionIP"></asp:Label>
+            </div>
+            <div class="menuSuperior">
+                <asp:LinkButton ID="lnkMaestros" runat="server" CssClass="menuSuperiorLink1" Text="MAESTROS"
+                    OnClick="lnkMaestros_Click" Font-Overline="false" CausesValidation="false"></asp:LinkButton>
+                <asp:LinkButton ID="lnkTransacciones" runat="server" CssClass="menuSuperiorLink2"
+                    Text="TRANSACCIONES" OnClick="lnkTransacciones_Click" Font-Overline="false" CausesValidation="false"></asp:LinkButton>
+                <asp:LinkButton ID="lnkReportes" runat="server" CssClass="menuSuperiorLink3" Text="REPORTES"
+                    OnClick="lnkReportes_Click" Font-Overline="false" CausesValidation="false"></asp:LinkButton>
+                <asp:LinkButton ID="lnkCerrarSession" runat="server" CssClass="menuSuperiorLink5"
+                    Text="CERRAR SESION" OnClick="lbCerrarSesion_Click" Font-Overline="false" CausesValidation="false"></asp:LinkButton>
+            </div>
+        </div>
+        <div class="divSeparacionBrand">
+            <asp:Image ID="Image5" ImageUrl="~/Imagenes/botonesSep.png" runat="server" Width="960px" />
+        </div>
+        <%-- FIN ENCABEZADO --%>
+        <%-- INICIO CUERPO --%>
+        <div class="leftSideBar">
+            <div class="divTitulo">
+                <asp:Label ID="lblReportes" runat="server" Text="Reportes" Font-Bold="true"></asp:Label>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <asp:HyperLink ID="hConsultaDocumentos" runat="server" CssClass="menuIzquierdaLink"
+                            CausesValidation="false" NavigateUrl="~/Reportes/ConsultaDocumentos.aspx" Font-Overline="false">
+                            <asp:Label ID="Label1" runat="server" Text="Consulta Documentos"></asp:Label></asp:HyperLink></li>
+                </ul>
+            </div>
+            <div>
+                <asp:Image ID="Image3" ImageUrl="~/Imagenes/menuSep.png" runat="server" CssClass="divMenuSeparador" />
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <asp:HyperLink ID="hConsultaEstado" runat="server" CssClass="menuIzquierdaLink" CausesValidation="false"
+                            NavigateUrl="~/Reportes/ConsultarEstadoDocumento.aspx" Font-Overline="false">
+                            <asp:Label ID="Label2" runat="server" Text="Consulta Estado Documento"></asp:Label></asp:HyperLink></li>
+                </ul>
+            </div>
+            <div>
+                <asp:Image ID="Image7" ImageUrl="~/Imagenes/menuSep.png" runat="server" CssClass="divMenuSeparador" />
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <asp:HyperLink ID="hConsultaRecibos" runat="server" CssClass="menuIzquierdaLink"
+                            CausesValidation="false" NavigateUrl="~/Reportes/ConsultaRecibos.aspx" Font-Overline="false">
+                            <asp:Label ID="Label7" runat="server" Text="Consulta Cobros"></asp:Label></asp:HyperLink></li>
+                </ul>
+            </div>
+            <div>
+                <asp:Image ID="Image2" ImageUrl="~/Imagenes/menuSep.png" runat="server" CssClass="divMenuSeparador" />
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <asp:HyperLink ID="hEstadoCuentaClientes" runat="server" CssClass="menuIzquierdaLink"
+                            CausesValidation="false" NavigateUrl="~/Reportes/ReporteEstadoCuentaCliente.aspx"
+                            Font-Overline="false">
+                            <asp:Label ID="Label4" runat="server" Text="Cuenta Corriente Clientes"></asp:Label></asp:HyperLink></li>
+                </ul>
+            </div>
+            <div>
+                <asp:Image ID="Image10" ImageUrl="~/Imagenes/menuSep.png" runat="server" CssClass="divMenuSeparador" />
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <asp:HyperLink ID="hListadoClienteProducto" runat="server" CssClass="menuIzquierdaLink"
+                            CausesValidation="false" NavigateUrl="~/Reportes/ListadoClienteProducto.aspx"
+                            Font-Overline="false">
+                            <asp:Label ID="Label10" runat="server" Text="Listado Cliente Producto"></asp:Label></asp:HyperLink></li>
+                </ul>
+            </div>
+            <div>
+                <asp:Image ID="Image1" ImageUrl="~/Imagenes/menuSep.png" runat="server" CssClass="divMenuSeparador" />
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <asp:HyperLink ID="hInformePorcentajesCliente" runat="server" CssClass="menuIzquierdaLink"
+                            CausesValidation="false" NavigateUrl="~/Reportes/InformePorcentajesClientes.aspx"
+                            Font-Overline="false">
+                            <asp:Label ID="Label3" runat="server" Text="Listado por Cliente"></asp:Label></asp:HyperLink></li>
+                </ul>
+            </div>
+            <div>
+                <asp:Image ID="Image12" ImageUrl="~/Imagenes/menuSep.png" runat="server" CssClass="divMenuSeparador" />
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <asp:HyperLink ID="hInformePorcentajesMercaderia" runat="server" CssClass="menuIzquierdaLink"
+                            CausesValidation="false" NavigateUrl="~/Reportes/InformePorcentajesMercaderia.aspx"
+                            Font-Overline="false">
+                            <asp:Label ID="Label12" runat="server" Text="Listado por Mercaderia"></asp:Label></asp:HyperLink></li>
+                </ul>
+            </div>
+            <div>
+                <asp:Image ID="Image4" ImageUrl="~/Imagenes/menuSep.png" runat="server" CssClass="divMenuSeparador" />
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <asp:HyperLink ID="hListadoDocumentosVencidos" runat="server" CssClass="menuIzquierdaLink"
+                            CausesValidation="false" NavigateUrl="~/Reportes/ReporteDocumentosVencidos.aspx"
+                            Font-Overline="false">
+                            <asp:Label ID="Label6" runat="server" Text="Listado Documentos Vencidos"></asp:Label></asp:HyperLink></li>
+                </ul>
+            </div>
+            <div>
+                <asp:Image ID="Image9" ImageUrl="~/Imagenes/menuSep.png" runat="server" CssClass="divMenuSeparador" />
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <asp:HyperLink ID="hInformeCobros" runat="server" CssClass="menuIzquierdaLink" CausesValidation="false"
+                            NavigateUrl="~/Reportes/InformeCobrosCliente.aspx" Font-Overline="false">
+                            <asp:Label ID="Label9" runat="server" Text="Listado de Deudores"></asp:Label></asp:HyperLink></li>
+                </ul>
+            </div>
+            <div>
+                <asp:Image ID="Image6" ImageUrl="~/Imagenes/menuSep.png" runat="server" CssClass="divMenuSeparador" />
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <asp:HyperLink ID="hListadoFacturacion" runat="server" CssClass="menuIzquierdaLink"
+                            CausesValidation="false" NavigateUrl="~/Reportes/ConsultaListadoFacturacion.aspx"
+                            Font-Overline="false">
+                            <asp:Label ID="Label8" runat="server" Text="Listado Facturacion"></asp:Label></asp:HyperLink></li>
+                </ul>
+            </div>
+            <div>
+                <asp:Image ID="Image8" ImageUrl="~/Imagenes/menuSep.png" runat="server" CssClass="divMenuSeparador" />
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <asp:HyperLink ID="hResumenVentas" runat="server" CssClass="menuIzquierdaLink" CausesValidation="false"
+                            NavigateUrl="~/Reportes/ResumenVentas.aspx" Font-Overline="false">
+                            <asp:Label ID="Label11" runat="server" Text="Resumen de Ventas"></asp:Label></asp:HyperLink></li>
+                </ul>
+            </div>
+            <div>
+                <asp:Image ID="Image11" ImageUrl="~/Imagenes/menuSep.png" runat="server" CssClass="divMenuSeparador" />
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <asp:HyperLink ID="hBalanceClientes" runat="server" CssClass="menuIzquierdaLink"
+                            CausesValidation="false" NavigateUrl="~/Reportes/ReporteBalancePorFecha.aspx"
+                            Font-Overline="false">
+                            <asp:Label ID="Label13" runat="server" Text="Saldos Cliente a una Fecha"></asp:Label></asp:HyperLink></li>
+                </ul>
+            </div>
+            <div>
+                <asp:Image ID="Image13" ImageUrl="~/Imagenes/menuSep.png" runat="server" CssClass="divMenuSeparador" />
+            </div>
+        </div>
+        <%-- FIN CUERPO --%>
+        <div class="content">
+            <asp:ContentPlaceHolder ID="Contenido" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
